@@ -9,8 +9,7 @@ resource "google_container_cluster" "engineering" {
   # node pool and immediately delete it.
   remove_default_node_pool = true
   initial_node_count       = 1
-  network = "infra-hashi-vault"
-  subnetwork = ""
+  network = "infra-hashi-vpc"
 
   master_auth {
     username = var.username
