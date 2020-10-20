@@ -1,6 +1,6 @@
 terraform {
   backend "remote" {
-    organization = "joelinthecloud"
+    organization = "jcote-deployments"
 
     workspaces {
       name = "learn-terraform-pipelines-k8s"
